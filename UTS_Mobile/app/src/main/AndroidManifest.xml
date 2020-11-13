@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.politeknikharber.UTS_mobile_Tegar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UTS_Mobile_Tegar">
+        <activity android:name="id.ac.politeknikharber.UTS_mobile_Tegar.login.LoginActivity"></activity>
+
+
+        <activity
+            android:name="id.ac.politeknikharber.UTS_mobile_Tegar.calculator.HasilKalkuator"
+            android:parentActivityName="id.ac.politeknikharber.UTS_mobile_Tegar.calculator.Calculator" />
+
+        <activity
+            android:name="id.ac.politeknikharber.UTS_mobile_Tegar.calculator.Calculator"
+            android:parentActivityName="id.ac.politeknikharber.UTS_mobile_Tegar.MainActivity" />
+
+        <activity android:name="id.ac.politeknikharber.UTS_mobile_Tegar.about.TentangUTS"
+            android:parentActivityName="id.ac.politeknikharber.UTS_mobile_Tegar.MainActivity"/>
+        <activity
+            android:name="id.ac.politeknikharber.UTS_mobile_Tegar.SplashScreen"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="id.ac.politeknikharber.UTS_mobile_Tegar.MainActivity" />
+    </application>
+
+</manifest>
